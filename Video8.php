@@ -2,7 +2,7 @@
 
 /*
 
- #9
+ #8
     [1] Class    : Is A Blueprint that u can create object from
     [2] Object   : Is A Member In the main Application
     [3] Class Has Properties and Methods
@@ -39,14 +39,8 @@ class AppleDevice {
    public $space = "128 GB";
    public $color = "Blue";
    public $ownerName ;
-
-   // Constants
-
-   const Chip = "M1";
-
    
    // Method
-
   /*
    public function getSpeciification(){
       echo " This Iphone Ram Is : " . $this ->ram . "<br>";
