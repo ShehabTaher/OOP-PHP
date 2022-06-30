@@ -2,10 +2,8 @@
 
 /*
 
- #12
-    [1] Encapsulation
-
-
+ #11
+    [1] Training
 */
 
 class AppleDevice {
@@ -13,21 +11,18 @@ class AppleDevice {
    public $ram   = "1 GB";
    public $inch  = "5.9 Inch";
    public $space = "128 GB";
-   public $color = "Blue"; 
-   private $lock ;
+   public $color = "Blue";
+ 
 
    
    // Methods
 
+ 
    public function changeSpec($ra , $in , $sp , $c){
       $this -> ram   = $ra ;
       $this -> inch  = $in ;
       $this -> space = $sp ;
       $this -> color = $c ;
-   }
-
-   public function changeLock ($lo){
-      $this -> lock = sha1($lo);
    }
 
    
@@ -38,11 +33,8 @@ class AppleDevice {
 
 $iphone6s = new AppleDevice();
 $iphone6s -> changeSpec("3GB", "5 Inch" , "32 GB" , "Red");
-$iphone6s -> changeLock("shehab");
 
-// $iphone6s ->lock = "Shehab123";
-
-// echo $iphone6s->ram;  // Print Any Property
+echo $iphone6s->ram;  // Print Any Property
 echo "<pre>";
 var_dump($iphone6s);
 echo "</pre>";
