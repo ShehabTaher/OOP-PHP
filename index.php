@@ -37,4 +37,5 @@ var_dump($iphone6s);
 echo "</pre>";
 echo "<pre>";
 var_dump($iphone7);
+
 echo "</pre>";
