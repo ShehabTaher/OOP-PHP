@@ -2,28 +2,29 @@
 
 /*
 
- #21 
-    [1] Magic Methods : 
-                        - Method With special Name Start With Double Undescore [ __ ]
-    [2]Construct 
-             
+ #27 
+    [*] Method Chaining : 
+                        - When a Class's Methods return the $this keyword , the can be chained to gether
 */
 
 class Iphone {
-   public $name ;
-   public $ram ;
-
-   public function sayHello()
+   public static $name = "Shehab";
+   public static $ram = " 8 GB";
+   
+   public static function sayHello()
    {
-      echo " Hello User";
+      return "hello";
    }
 }
 
+
+
 $phone = new Iphone();
-$phone -> sayHello();
+// echo $phone->name;
+echo $phone->sayHello();
+// echo Iphone::sayHello();
 
-echo " <pre>";
-print_r($phone);
-echo " </pre>";
-
-
+echo Iphone::$name . "<br>";
+echo Iphone::$ram . "<br>";
+echo Iphone::sayHello() . "<br>";
+ 
